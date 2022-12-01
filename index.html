@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Access Denied</title>
+</head>
+<body>
+    <p class="line typing-animation">Novo IP detectado. Lembre-se, a única forma de ter acesso é acessando um site que não existe.</p>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier Prime', monospace;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+        }
+        .line {
+            background-color: black;
+            color: #0ec00e;
+            font-size: 20px;
+            border-right:2px solid rgba(255, 255, 255, .75);
+            margin: 0 auto;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .typing-animation {
+            animation:blinkCursor 500ms steps(40) normal, typing 5s steps(40) 1s;
+        }
+        @keyframes typing {
+            from{
+                width: 0;
+            }
+            to{
+                width: 60em;
+            }
+        }
+        @keyframes blinkCursor {
+            from{
+                border-right-color:rgba(255, 255, 255, .75);
+            }
+            to{
+                border-right-color: transparent;
+            }
+        }
+    </style>
+</body>
+</html>
